@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  /* Please help with the background-size and position */
+  background-size: 70%, 70%;
+  background-repeat: no-repeat no-repeat;
+  background-position: -322px -522px, 641px 342px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  background-position: -322px -522px, 641px 342px;
+}
+
+div.card {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 320px;
+  height: 360px;
+  text-align: center;
+}
+
+header {
+  background-image: url(../images/bg-pattern-card.svg);
+  width: 100%;
+  height: 115px;
+  border-radius: 20px 20px 0 0;
+}
+
+img.profile-pic {
+  position: relative;
+  border: 5rem solid;
+  border-color: #fff;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  top: 57.5%;
+}
+
+h1.profile-name {
+  position: relative;
+  top: 75%;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+span.age {
+  color: hsl(227, 10%, 46%);
+  font-weight: normal;
+}
+p.location {
+  position: relative;
+  top: 80%;
+  color: hsl(227, 10%, 46%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+hr {
+  position: relative;
+  font-weight: normal;
+  opacity: 0.4;
+  top: 44%;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 46%;
+}
+
+h2.value {
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+  padding: 0 27px;
+}
+
+p.attribute {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+}
